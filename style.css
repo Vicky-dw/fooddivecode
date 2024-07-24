@@ -490,6 +490,34 @@ body{
         font-size: 16px;
     }
 
-    
+    .horario {
+        padding: 30px;
+        text-align: center;
+    }
 
+    .horario-info h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .horario-txt p {
+        flex-direction: column;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
 }
