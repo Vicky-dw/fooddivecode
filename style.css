@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@imp@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- text-decoration: none;
- list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-body{
-  background-color: #080202;
-  font-family: 'Poppin', sans-serif;
-
+body {
+    background-color: #080202;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -19,31 +18,28 @@ body{
     margin: 0 auto;
 }
 
-.swiper-button-prev::after {
-    font-size: 25px;
-}
-
-.swiper-button-next::after {
-    font-size: 25px;
-}
-
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
 .swiper-button-next {
-    color: #db241b;
+    color: #db241b; /* Color para ambos botones */
 }
 
-.swiper-button-prev {
-    color: #db241b;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px; /* Tamaño de fuente para los iconos */
 }
 
+/* Swiper Pagination */
 .swiper-pagination-bullet {
     background-color: #d3d2d2;
-    opacity: 1;
+    opacity: 1; /* Asegura que la opacidad sea siempre visible */
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #db241b;
+    background-color: #db241b; /* Color activo para el bullet */
 }
 
+/* Menu Styles */
 .menu {
     position: absolute;
     top: 20px;
@@ -51,12 +47,14 @@ body{
     right: 0;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
 }
 
+/* Navbar Styles */
 .navbar {
-    display: flex;
+    display: flex; /* Flexbox para alinear elementos en la barra de navegación */
 }
+/* Menu Styles */
 .menu-1 {
     margin-right: 180px;
 }
@@ -67,16 +65,18 @@ body{
     align-items: center;
 }
 
+/* Logo Styles */
 .logo-1 {
-    width: 0;
+    width: 0; /* Considera ajustar esto si es necesario */
 }
+
 .logo-2 {
     width: 150px;
 }
 
+/* Social Media Icons */
 .socials {
     display: flex;
-
 }
 
 .social {
@@ -84,7 +84,8 @@ body{
     height: 40px;
     width: 40px;
     border: 1px solid #db241b;
-    border-radius:  50%;
+    border-radius: 50%;
+    transition: background-color 0.3s; /* Añadido para un efecto suave al hover */
 }
 
 .social:hover {
@@ -92,12 +93,16 @@ body{
 }
 
 .social img {
-    margin:  8px 0 0 10px;
+    margin: 8px 0 0 10px; /* Considera usar padding en lugar de margen para centrar mejor la imagen */
+}
+
+/* Navbar Styles */
+.menu .navbar ul {
+    display: flex; /* Asegura que los elementos de la lista se alineen horizontalmente */
 }
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
 }
 
 .menu .navbar ul li a {
@@ -105,124 +110,146 @@ body{
     padding: 20px;
     color: #ffffff;
     display: block;
+    transition: color 0.3s; /* Añadido para un efecto suave al hover */
 }
 
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: #db241b;
 }
 
+/* Menu Icon Styles */
 .menu-icono {
     width: 25px;
 }
 
+/* Responsive Menu Label */
 .menu label {
     cursor: pointer;
-    display: none;
+    display: none; /* Considera mostrarlo en dispositivos móviles con media queries */
 }
 
+/* Header Content Styles */
 .header-content {
-    margin-top: 200px;
-    padding-bottom: 50px;
-
+    margin-top: 200px; 
+    padding-bottom: 50px; 
 }
 
+/* Slider Styles */
 .slider {
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinea verticalmente los elementos dentro del slider */
 }
 
 .slider-txt {
-    margin-left: 85px;
-    width: 50%;
+    margin-left: 85px; /* Espacio a la izquierda del texto */
+    width: 50%; /* Ancho del contenedor de texto */
 }
 
-.slider-txt h1{
-    font-size: 70px;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 800;
+.slider-txt h1 {
+    font-size: 70px; /* Tamaño de fuente para el título */
+    color: #ffffff; /* Color del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: 800; /* Grosor de la fuente */
 }
 
-.slider-txt p{
-    font-size: 18px;
-    color: #a7a7a7;
+.slider-txt p {
+    font-size: 18px; /* Tamaño de fuente para el párrafo */
+    color: #a7a7a7; /* Color del texto del párrafo */
 }
-.botones{
-    margin-top: 50px;
+/* Botones Styles */
+.botones {
+    margin-top: 50px; /* Espacio superior para los botones */
 }
+
 .btn-1 {
-    display: inline-block;
-    padding: 15px 35px;
-    border: 2px solid #db241b;
-    color: #ffffff;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-right: 20px;
-    border-radius: 50px;
+    display: inline-block; /* Permite que el botón se comporte como un bloque en línea */
+    padding: 15px 35px; /* Espaciado interno del botón */
+    border: 2px solid #db241b; /* Borde del botón */
+    color: #ffffff; /* Color del texto */
+    font-weight: 800; /* Grosor de la fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-right: 20px; /* Espacio a la derecha del botón */
+    border-radius: 50px; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para hover */
 }
 
 .btn-1:hover {
-    background-color: #db241b;
+    background-color: #db241b; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse (opcional) */
 }
 
+/* Slider Image Styles */
 .slider-img {
-    width: 50%;
+    width: 50%; /* Ancho del contenedor de la imagen del slider */
 }
 
-.slider-img img{
-    margin-right: 225px;
-    width: 550px;
+.slider-img img {
+    margin-right: 225px; /* Espacio a la derecha de la imagen (ajustar según sea necesario) */
+    width: 100%; /* Cambiado a 100% para que sea responsivo dentro de su contenedor */
+    max-width: 550px; /* Ancho máximo para evitar que se estire demasiado en pantallas grandes */
 }
 
+/* Products Section Styles */
 .products {
-    background-color: #0d0d0d;
+    background-color: #0d0d0d; /* Color de fondo para la sección de productos */
 }
-
+/* Tabs Container */
 .tabs {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 100px 0px;
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    padding: 100px 0; /* Espaciado superior e inferior */
 }
 
+/* Tab Labels */
 .tabs label {
-    width: 15%;
-    order: 1;
-    display: block;
-    padding: 20px 0;
-    text-align: center;
-    cursor: pointer;
-    color: #a7a7a7;
-    font-weight: 700;
-    transition: background ease 0.2s;
+    width: 15%; /* Ancho de cada etiqueta de pestaña */
+    order: 1; /* Orden en el flujo del documento */
+    display: block; /* Hace que cada etiqueta ocupe todo el ancho disponible */
+    padding: 20px 0; /* Espaciado interno vertical */
+    text-align: center; /* Centra el texto dentro de la etiqueta */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la etiqueta */
+    color: #a7a7a7; /* Color del texto por defecto */
+    font-weight: 700; /* Grosor de la fuente */
+    transition: background-color ease 0.2s, color ease 0.2s; /* Transiciones suaves para fondo y color */
 }
 
-.tabs .tab{
-    order: 99;
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding-top:  25px;
-}
-
-.tabs input[type="radio"] {
-    display: none;
-}
-
+/* Active Tab Styles */
 .tabs input[type="radio"]:checked + label {
-    border-bottom: 2px solid #db241b;
-    color: #ffffff;
+    border-bottom: 2px solid #db241b; /* Borde inferior para la pestaña activa */
+    color: #ffffff; /* Color del texto para la pestaña activa */
 }
 
-.product{
+/* Tab Content */
+.tabs .tab {
+    order: 99; /* Asegura que el contenido de las pestañas esté al final del flujo visual */
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante disponible */
+    width: 100%; /* Ancho completo del contenedor de pestañas */
+    display: none; /* Oculta el contenido por defecto */
+    padding-top: 25px; /* Espacio superior para el contenido de la pestaña */
+}
+
+/* Mostrar contenido de la pestaña activa (puedes usar JavaScript para manejar esto) */
+/* Ejemplo de uso con JavaScript:
+   .tabs input[type="radio"]:checked ~ .tab { display: block; }
+*/
+:root {
+    --primary-color: #ffffff; /* Color principal */
+    --secondary-color: #a7a7a7; /* Color secundario */
+    --border-color: #555555; /* Color del borde */
+    --font-weight-bold: 800; /* Grosor de fuente negrita */
+    --font-weight-normal: 400; /* Grosor de fuente normal */
+}
+
+.product {
     display: flex;
     align-items: center;
-    padding:  25px;
+    padding: 25px;
     margin: 0 10px;
 }
 
 .product-img {
-    width:  50%;
+    flex: 1; /* Utiliza el espacio disponible */
     text-align: left;
 }
 
@@ -230,44 +257,43 @@ body{
     display: inline-block;
     padding: 5px 7px;
     line-height: 15px;
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 800;
-    border: 2px solid #555555;
+    font-weight: var(--font-weight-bold);
+    border: 2px solid var(--border-color);
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .product-img img {
-    width: 150px;
-    height: 120px;
+    width: 150px; 
+    height: auto; /* Mantiene la proporción de la imagen automáticamente */
 }
 
 .product-txt {
-    width: 50%;
+    flex: 1; /* Utiliza el espacio disponible */
     margin-left: 10px;
-    text-align: left;
 }
 
-.product-txt h4{
-    color: #ffffff;
+.product-txt h4 {
+    color: var(--primary-color);
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 5px;
 }
 
 .product-txt p {
-    color: #a7a7a7;
+    color: var(--secondary-color);
     font-size: 16px;
     margin-bottom: 15px;
 }
 
 .product-txt span {
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 18px;
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 .info {
