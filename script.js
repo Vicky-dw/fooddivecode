@@ -1,3 +1,4 @@
+// Inicialización del primer swiper
 var swiper1 = new Swiper(".mySwiper-1", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -9,9 +10,10 @@ var swiper1 = new Swiper(".mySwiper-1", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
+    }
 });
 
+// Inicialización del segundo swiper
 var swiper2 = new Swiper(".mySwiper-2", {
     slidesPerView: 3,
     spaceBetween: 20,
@@ -30,15 +32,18 @@ var swiper2 = new Swiper(".mySwiper-2", {
         },
         950: {
             slidesPerView: 3,
-        },
-    },
+        }
+    }
 });
+
+// Manejo de eventos para los inputs de tabulación
 let tabInputs = document.querySelectorAll(".tabInput");
 tabInputs.forEach(function(input) {
     input.addEventListener('change', function() {
-        let id = input.getAttribute('aria-valuemax'); // Cambié ariaValueMax a getAttribute
+        let id = input.getAttribute('aria-valuemax'); // Cambiado a getAttribute para obtener el valor correcto
         let thisSwiper = document.getElementById('swiper' + id);
-        if (thisSwiper && thisSwiper.swiper) { // Verificación de existencia
+
+        if (thisSwiper && thisSwiper.swiper) { // Verificación adicional para evitar errores
             thisSwiper.swiper.update();
         }
     });
