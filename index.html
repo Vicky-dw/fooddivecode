@@ -6,14 +6,15 @@
     <title>Document</title> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
    <header>
     <div class="menu container">
         <img class="logo-1" src="images/logo.svg" alt="">
-        <input type="checkbox" id="menu">
+        <imput type="checkbox" id="menu"></imput>
         <label for="menu">
-            <img src="images/menu.png" class="menu-icon" alt="">
+            <img src="images/menu.png" class="menu-icono" alt="">
         </label>
         <nav class="navbar">
             <div class="menu-1">
@@ -24,6 +25,7 @@
                 </ul>
             </div>
             <img class="logo-2" src="images/logo.svg" alt="">
+           
             <div class="menu-2">
                 <ul>
                     <li><a href="#">Schedules</a></li>
@@ -51,32 +53,28 @@
     <div class="header-content container">
         <div class="swiper mySwiper-1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider">
-                        <div class="slider-txt">
-                            <h1>Burger</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Eveniet quidem tenetur sit cupiditate temporibus. 
-                            Mollitia alias ex non facere cumque magnam unde, dolorem aliquam nihil ducimus repudiandae.
-                            Quasi, minima nesciunt!</p>
-                            <div class="botones">
-                                <a href="#" class="btn-1">Buy</a>
-                                <a href="#" class="btn-1">Menu</a>
-                            </div>
-                        </div>
-                        <div class="slider-img">
-                            <img src="images/slider1.png" alt="">
+                <div class="slider">
+                    <div class="slider-txt">
+                        <h1>Burger</h1>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eveniet quidem tenetur sit cupiditate temporibus. 
+                        Mollitia alias ex non facere cumque magnam unde, dolorem aliquam nihil ducimus repudiandae.
+                        Quasi, minima nesciunt!</P>
+                        <div class="botones">
+                            <a href="#" class="btn-1">Buy</a>
+                            <a href="#" class="btn-1">Menu</a>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
+                    <div class="slider-img">
+                        <img src="images/slider1.png" alt="">
+                    </div>
                     <div class="slider">
                         <div class="slider-txt">
                             <h1>Sandwich</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Eveniet quidem tenetur sit cupiditate temporibus. 
                             Mollitia alias ex non facere cumque magnam unde, dolorem aliquam nihil ducimus repudiandae.
-                            Quasi, minima nesciunt!</p>
+                            Quasi, minima nesciunt!</P>
                             <div class="botones">
                                 <a href="#" class="btn-1">Buy</a>
                                 <a href="#" class="btn-1">Menu</a>
@@ -86,15 +84,13 @@
                             <img src="images/slider2.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
                     <div class="slider">
                         <div class="slider-txt">
                             <h1>Hamburgers</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Eveniet quidem tenetur sit cupiditate temporibus. 
                             Mollitia alias ex non facere cumque magnam unde, dolorem aliquam nihil ducimus repudiandae.
-                            Quasi, minima nesciunt!</p>
+                            Quasi, minima nesciunt!</P>
                             <div class="botones">
                                 <a href="#" class="btn-1">Buy</a>
                                 <a href="#" class="btn-1">Menu</a>
@@ -103,19 +99,20 @@
                         <div class="slider-img">
                             <img src="images/slider3.png" alt="">
                         </div>
-                    </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                   </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
    </header>
 
 <main class="products">
     <div class="tabs container">
-        <input type="radio" name="tabs" id="tab1" class="tabinput" value="1">
+        
+        <input type="radio" name="tabs" id="tab1" checked="checked" class="tabimput" value="1">
         <label for="tab1">Burger</label>
         <div class="tab">
             <div class="swiper mySwiper-2" id="swiper1">
@@ -125,6 +122,7 @@
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food1.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -133,11 +131,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food2.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -146,11 +146,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food3.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -159,13 +161,17 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
             </div>
+        
         </div>
 
-        <input type="radio" name="tabs" id="tab2" class="tabinput" value="2">
+        <input type="radio" name="tabs" id="tab2" checked="checked" class="tabimput" value="2">
         <label for="tab2">Burrito</label>
         <div class="tab">
             <div class="swiper mySwiper-2" id="swiper2">
@@ -175,6 +181,7 @@
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food4.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -183,11 +190,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food5.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -196,11 +205,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food6.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -209,13 +220,17 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
             </div>
+        
         </div>
 
-        <input type="radio" name="tabs" id="tab3" class="tabinput" value="3">
+        <input type="radio" name="tabs" id="tab3" checked="checked" class="tabimput" value="3">
         <label for="tab3">Variety</label>
         <div class="tab">
             <div class="swiper mySwiper-2" id="swiper3">
@@ -225,6 +240,7 @@
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food7.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -233,11 +249,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food8.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -246,11 +264,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="product">
                             <div class="product-img">
                                 <h4>Nuevo</h4>
                                 <img src="images/food9.png" alt="">
+                            
                             </div>
                             <div class="product-txt">
                                 <h4>Product</h4>
@@ -259,75 +279,99 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+
             </div>
+        
         </div>
+
     </div>
+
 </main>
 
-<footer>
-    <div class="container">
-        <div class="footer-box">
-            <h4>Box-1</h4>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <h4>Box-2</h4>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-            </ul>
-        </div>
-        <div class="footer-box">
-            <h4>Box-3</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+<section class="info container">
+    <div class="info-img">
+        <img src="images/info.png" alt="">
+    </div>
+    <div class="info-txt">
+        <h2>Information</h2>
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur pariatur vel beatae dolorem in explicabo doloribus amet, temporibus quos tenetur aliquid cupiditate.
+            Quibusdam sint repellendus natus laborum reprehenderit, consequatur et?
+        </p>
+        <a href="#" class="btn-2">Learn More</a>
+    </div>
+</section>
+<section class="horario">
+    <div class="horario-info">
+        <h2>Schedule</h2>
+        <div class="horario-txt">
+            <div class="txt">
+                <h4>Address</h4>
+                <p>
+                    153, Coleman Brake Road
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Schedule</h4>
+                <p>
+                    Monday to Friday: 9am - 10pm </p>
+                <p>
+                    Saturday to Sunday: 10am - 11:30pm
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Contact</h4>
+                <p>
+                    888 3443769 </p>
+                <p>
+                    mexburger@gmail.com
+                </p>
+            </div>
+            <div class="txt">
+                <div class="socials">
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s3.svg" alt="">
+                        </div>
+                </div>                  
         </div>
     </div>
+</section>
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772086.485270632!2d-120.8825225!3d47.272992599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485e5ffe7c3b0f9%3A0x944278686c5ff3ba!2sWashington%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1721170463310!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer class="footer container">
+    <img class="logo-2" src="images/logo.svg" alt="">
+    <div class="links">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sunt ipsam, vel, quos molestiae nihil ipsa nisi illo eveniet dolore ullam voluptatem inventore voluptates. 
+            Dicta sunt, modi ad ut sapiente obcaecati!</h4>
+            <ul>
+                <il><a href="#">lorem</a></il>
+                <il><a href="#">lorem</a></il>
+                <il><a href="#">lorem</a></il>
+            </ul>
+    </div>
+    
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper1 = new Swiper('.mySwiper-1', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
-
-    var swiper2 = new Swiper('#swiper1', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    var swiper3 = new Swiper('#swiper2', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    var swiper4 = new Swiper('#swiper3', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
